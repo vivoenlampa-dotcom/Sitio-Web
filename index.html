@@ -2,39 +2,113 @@
 <html lang="es"> 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mi Página Web</title>
   <style>
-    
+    /* Estilos generales */
     body {
-      background-color: #ffffff; 
-      color: #000000; 
-      font-family: Arial, sans-serif;
-      line-height: 1.5;
-      margin: 20px;
+      background-color: #f4f4f9; 
+      color: #333333; 
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
     }
-    a:focus, button:focus, input:focus {
-      outline: 3px solid #005fcc; 
-      outline-offset: 2px;
+
+    /* Header */
+    h1 {
+      background-color: #005fcc;
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+      font-size: 2em;
+      border-bottom: 3px solid #003b8c;
     }
+
+    /* Estilo para los subtítulos */
+    h2 {
+      color: #005fcc;
+      margin-top: 20px;
+      text-align: center;
+      font-size: 1.8em;
+    }
+
+    /* Estilo para la lista */
+    ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    li {
+      font-size: 1.2em;
+      background-color: #ffffff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s;
+    }
+
+    li:hover {
+      background-color: #e6f0ff;
+    }
+
+    /* Imagen */
     img {
+      display: block;
+      margin: 20px auto;
       max-width: 100%;
       height: auto;
-      border: 2px solid #000; 
+      border: 3px solid #005fcc;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Navegación con teclado */
+    a:focus, button:focus, input:focus {
+      outline: 3px solid #005fcc;
+      outline-offset: 2px;
+    }
+
+    /* Texto alternativo en una caja destacada */
+    .accessibility-message {
+      background-color: #ffeb3b;
+      color: #333;
+      padding: 10px;
+      margin: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      font-size: 1.1em;
+      font-weight: bold;
+      text-align: center;
     }
   </style>
 </head>
+
 <body>
 
+  <!-- Mensaje de accesibilidad -->
+  <div class="accessibility-message">
+    <p>Este sitio web está diseñado para ser accesible para todos. Si tienes alguna dificultad para navegar, por favor, avísanos. Estamos trabajando para mejorar la experiencia.</p>
+  </div>
+
+  <!-- Título de la página -->
   <h1 tabindex="0">Mi Página Web</h1> 
 
-  <h2>Lista de texto</h2>
+  <!-- Subtítulo y lista -->
+  <h2 tabindex="0">Lista de Ítems</h2>
   <ul>
-    <li>Ítem 1</li>
-    <li>Ítem 2</li>
-    <li>Ítem 3</li>
+    <li tabindex="0">Ítem 1</li>
+    <li tabindex="0">Ítem 2</li>
+    <li tabindex="0">Ítem 3</li>
   </ul>
 
-  <img src="Imagen/hola_mundo.webp" alt="Texto descriptivo de la imagen que explique su contenido" width="400" />
+  <!-- Imagen con la nueva URL -->
+  <img src="https://w7.pngwing.com/pngs/796/346/png-transparent-alphabet-letter-ch%E1%BB%AF-vi%E1%BA%BFt-blue-actores-blue-text-logo.png" 
+       alt="Imagen representativa mostrando un mensaje visual del alfabeto en color azul, con letras estilizadas" 
+       width="400" />
 
 </body>
 </html>
