@@ -1,21 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="es"> 
 <head>
   <meta charset="UTF-8">
   <title>Mi Página Web</title>
+  <style>
+    
+    body {
+      background-color: #ffffff; 
+      color: #000000; 
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+      margin: 20px;
+    }
+    a:focus, button:focus, input:focus {
+      outline: 3px solid #005fcc; 
+      outline-offset: 2px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border: 2px solid #000; 
+    }
+  </style>
 </head>
 <body>
 
-  <h1>Mi Página Web</h1>
+  <h1 tabindex="0">Mi Página Web</h1> 
 
   <h2>Lista de texto</h2>
   <ul>
-    <li>Item 1</li>
-    <li>Item 2</li>
-    <li>Item 3</li>
+    <li>Ítem 1</li>
+    <li>Ítem 2</li>
+    <li>Ítem 3</li>
   </ul>
 
-  <img src="Imagen/hola_mundo.webp" alt="Imagen representativa" width="400">
+  <img src="Imagen/hola_mundo.webp" alt="Texto descriptivo de la imagen que explique su contenido" width="400" />
 
 </body>
 </html>
